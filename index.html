@@ -3,23 +3,26 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
     <title>Journal</title>
   </head>
   <body>
     <div class="container">
       <h1>Journal</h1>
-      <form id="journal">
+      <form id="journalForm">
         <div class="form-group">
-          <label for="title"  class="">Journal Entery Title:</label>
+          <label for="title"  class="">Journal Entry Title:</label>
           <input type="text" name="title" id="title">
         </div>
         <div class="form-group">
-          <label for="body">Journal Entery:</label>
+          <label for="body">Journal Entry:</label>
           <textarea id="body" name="body" rows="8" cols="40"></textarea>
         </div>
         <button type="submit" name="button" class="btn btn-success">Count words!</button>
       </form>
+      <div id="output">
+      </div>
     </div>
-
   </body>
 </html>
